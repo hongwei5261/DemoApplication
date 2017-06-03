@@ -1,1 +1,1 @@
-include ':app', ':downloadprogressbar', ':customscrollview'
+include ':puzzle', ':downloadprogressbar', ':customscrollview'

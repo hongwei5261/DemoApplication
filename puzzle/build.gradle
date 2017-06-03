@@ -3,12 +3,23 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 25
     buildToolsVersion "25.0.2"
+
+    signingConfigs {
+        release {
+            keyAlias "open"
+            keyPassword "demo20170603"
+            storePassword "demo20170603"
+            storeFile file("${rootDir}/keystores/open.jks")
+        }
+    }
+
     defaultConfig {
-        applicationId "com.example.com.demoapplication"
+        applicationId "com.weihong.puzzle"
         minSdkVersion 15
         targetSdkVersion 25
         versionCode 1
         versionName "1.0"
+        signingConfig signingConfigs.release
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
