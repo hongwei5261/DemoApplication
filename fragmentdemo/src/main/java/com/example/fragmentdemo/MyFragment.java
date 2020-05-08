@@ -32,6 +32,9 @@ public class MyFragment extends Fragment {
         View v = inflater.inflate(R.layout.item_fragment, container, false);
         return v;
     }
+    // finally语句在return语句return返回之前执行的
+    // finally块中的return语句会覆盖try中的return返回
+    //
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {

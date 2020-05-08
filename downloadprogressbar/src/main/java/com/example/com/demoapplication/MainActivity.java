@@ -1,18 +1,19 @@
 package com.example.com.demoapplication;
 
+import android.app.Activity;
 import android.os.Handler;
 import android.os.Message;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class MainActivity extends AppCompatActivity {
+
+public class MainActivity extends Activity {
     DownloadProgressBar mDownloadBar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mDownloadBar = (DownloadProgressBar) findViewById(R.id.downloadbar);
+        mDownloadBar = (DownloadProgressBar) this.findViewById(R.id.downloadbar);
         func();
     }
 
