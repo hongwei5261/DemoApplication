@@ -1,1 +1,1 @@
-include ':puzzle', ':downloadprogressbar', ':customscrollview', ':fragmentdemo', ':common', ':breakpointdemo', ':opensourcedemo', ':concurrentdemo'
+include ':puzzle', ':downloadprogressbar', ':customscrollview', ':fragmentdemo', ':common', ':breakpointdemo', ':opensourcedemo', ':concurrentdemo', ':commondemo'
